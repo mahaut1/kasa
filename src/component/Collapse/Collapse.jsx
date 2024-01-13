@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Collapse.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 const Collapse = ({ title, children }) => {
   const [open, setOpen] = useState(false);
@@ -13,7 +15,7 @@ const Collapse = ({ title, children }) => {
       <button onClick={toggle}>
         <p>{title}</p>
         <p id="chevron" className={open ? "rotate" : ""}>
-          <i className={`fa-solid fa-chevron-up`}></i>{" "}
+          <FontAwesomeIcon icon={faChevronUp} />
         </p>
       </button>
       {open && (

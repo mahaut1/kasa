@@ -1,0 +1,21 @@
+#sectionAP {
+    #bannerImageAPropos {
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 25px;
+      margin-block: 2rem;
+      filter: brightness(70%);
+    }
+  }
+  
+  #sAPDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #collapsWrapper {
+    width: 80%;
+  margin: auto;
+  }
