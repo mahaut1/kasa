@@ -1,4 +1,5 @@
 $primary-rgb: 255 96 96;
+
 .logo-link {
   display: flex;
   flex-direction: row;
@@ -16,12 +17,14 @@ nav {
   font-size: 30px;
   margin-top: 2rem;
   white-space: nowrap;
+  text-decoration: none;
 
   .divNav {
     display: flex;
     gap: 3rem;
     padding-left: 3rem;
     align-items: center;
+    text-decoration: none;
   }
 
   .logo-link.active {
