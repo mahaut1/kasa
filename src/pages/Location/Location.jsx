@@ -24,7 +24,7 @@ function Location() {
   }, [id]);
 
   if (loading) {
-    return <div>Chargement...</div>;
+    return <div className="loading">Chargement...</div>;
   } else if (logement === undefined) {
     return <Navigate to="/not-found" />;
   }
@@ -41,17 +41,16 @@ function Location() {
   } = logement;
 
   return (
-    <section id="logementSection">
+    <section className="logementSection">
       <Slideshow pictures={pictures} />
-      <div id="divInit">
-        <div id="div1">
-          <div id="logementLocation">
-            {" "}
-            <span id="logementTitle">{title}</span>
+      <div className="divInit">
+        <div className="div1">
+          <div className="logementLocation">
+            <span className="logementTitle">{title}</span>
             {location}
           </div>
 
-          <div id="tags">
+          <div className="tags">
             {tags.map((tag, index) => (
               <span className="tag" key={index}>
                 {tag}
@@ -59,14 +58,14 @@ function Location() {
             ))}
           </div>
         </div>
-        <div id="div2">
-          <div id="logementHost">
-            <div id="logementHostName">{host.name}</div>
+        <div className="div2">
+          <div className="logementHost">
+            <div className="logementHostName">{host.name}</div>
             <div>
               <img src={host.picture} alt="hostPicture" />
             </div>
           </div>
-          <div id="logementStars">
+          <div className="logementStars">
             {Array.from({ length: 5 }, (_, index) => (
               <i
                 key={index}
@@ -80,7 +79,7 @@ function Location() {
           </div>
         </div>
       </div>
-      <div id="logementCollapse">
+      <div className="logementCollapse">
         <div className="classCollaps">
           <Collapse title="Description" className="collapse">
             {description}

@@ -1,11 +1,11 @@
 $primary-rgb: 255 96 96;
 
-#logementSection {
+.logementSection {
   color: rgb($primary-rgb);
   font-size: 30px;
 }
 
-#LogementCover {
+.LogementCover {
   height: 415px;
   width: 100%;
   object-fit: cover;
@@ -13,13 +13,13 @@ $primary-rgb: 255 96 96;
   border-radius: 10px;
 }
 
-#divInit {
+.divInit {
   display: flex;
   flex-direction: row;
   gap: 1rem;
 }
 
-#div1 {
+.div1 {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -28,7 +28,7 @@ $primary-rgb: 255 96 96;
   margin: 0%;
 }
 
-#logementHost {
+.logementHost {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -45,11 +45,11 @@ $primary-rgb: 255 96 96;
   }
 }
 
-#logementTitle {
+.logementTitle {
   font-size: larger;
 }
 
-#logementHostName {
+.logementHostName {
   max-width: 150px;
   font-size: smaller;
   position: relative;
@@ -67,7 +67,7 @@ $primary-rgb: 255 96 96;
   }
 }
 
-#logementLocation {
+.logementLocation {
   width: 100%;
   font-size: x-large;
   margin-bottom: 2rem;
@@ -75,7 +75,7 @@ $primary-rgb: 255 96 96;
   flex-direction: column;
 }
 
-#div2 {
+.div2 {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -85,7 +85,7 @@ $primary-rgb: 255 96 96;
   margin: 0%;
 }
 
-#tags {
+.tags {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -113,7 +113,7 @@ $primary-rgb: 255 96 96;
   flex-wrap: nowrap;
 }
 
-#logementCollapse {
+.logementCollapse {
   margin-top: 3rem;
   display: flex;
   justify-content: space-between;
@@ -128,19 +128,19 @@ $primary-rgb: 255 96 96;
     font-size: 20px;
     margin-bottom: 0.1rem;
   }
-  #divInit {
+  .divInit {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  #div1,
-  #div2,
-  #tags {
+  .div1,
+  .div2,
+  .tags {
     font-size: 20px;
   }
 
-  #logementLocation {
+  .logementLocation {
     width: 100%;
     font-size: x-large;
     margin-bottom: 1rem;
@@ -155,14 +155,14 @@ $primary-rgb: 255 96 96;
     margin-right: 0.5rem;
   }
 
-  #logementCollapse {
+  .logementCollapse {
     flex-direction: column;
     align-items: center;
     width: 100%;
     margin-top: 1rem;
   }
 
-  #div2 {
+  .div2 {
     width: 100%;
     flex-direction: row-reverse;
     align-items: center;

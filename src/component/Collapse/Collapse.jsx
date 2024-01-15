@@ -11,16 +11,16 @@ const Collapse = ({ title, children }) => {
   };
 
   return (
-    <div id="divCollapse">
+    <div className="customCollapse">
       <button onClick={toggle}>
-        <p>{title}</p>
-        <p id="chevron" className={open ? "rotate" : ""}>
+        <p className={`customTitle ${open ? "rotate" : ""}`}>{title}</p>
+        <p className={`customChevron ${open ? "rotate" : ""}`}>
           <FontAwesomeIcon icon={faChevronUp} />
         </p>
       </button>
       {open && (
-        <div className={`divCol ${open ? "slide-in" : "slide-out"}`}>
-          <div className="children">{children}</div>
+        <div className={`customContent ${open ? "slide-in" : "slide-out"}`}>
+          <div className="customChildren">{children}</div>
         </div>
       )}
     </div>
