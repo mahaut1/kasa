@@ -66,7 +66,7 @@ details,
 embed,
 figure,
 figcaption,
-footer,
+
 header,
 hgroup,
 menu,
@@ -93,7 +93,7 @@ aside,
 details,
 figcaption,
 figure,
-footer,
+
 header,
 hgroup,
 menu,
@@ -125,7 +125,9 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: "Raleway", sans-serif;
 }
-
+footer{
+  width:100%;
+}
 
 a {
   text-decoration: none;
