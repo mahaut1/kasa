@@ -20,7 +20,9 @@ const Collapse = ({ title, children }) => {
       </button>
       {open && (
         <div className={`customContent ${open ? "slide-in" : "slide-out"}`}>
-          <div className="customChildren">{children}</div>
+          <div className="customChildren" style={{ marginTop: '1rem' }}>
+            {children}
+          </div>
         </div>
       )}
     </div>
@@ -28,3 +30,5 @@ const Collapse = ({ title, children }) => {
 };
 
 export default Collapse;
+
+

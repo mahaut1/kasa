@@ -23,9 +23,7 @@ function APropos() {
           une exclusion de notre plateforme.
         </Collapse>
         <Collapse title="Service" className="collapse">
-          La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
-          comportement discriminatoire ou de perturbation du voisinage entraînera
-          une exclusion de notre plateforme.
+        Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.
         </Collapse>
         <Collapse title="Sécurité" className="collapse">
           La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour
