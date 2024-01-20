@@ -1,8 +1,7 @@
+// Gallery.jsx
 import React, { useEffect, useState } from "react";
 import Card from "../Card/Card";
 import "./Gallery.scss";
-
-
 
 function Gallery() {
   const [logements, setLogements] = useState([]);
@@ -17,15 +16,17 @@ function Gallery() {
   }, []);
 
   return (
-    <div className="Gallery">
-    {logements.map((logement) => (
-      <Card className="Card"
-        id={logement.id}
-        title={logement.title}
-        cover={logement.cover}
-      />
-    ))}
-  </div>
+    <div className="gallery">
+      {logements.map((logement) => (
+        <Card
+          key={logement.id}
+          id={logement.id}
+          title={logement.title}
+          cover={logement.cover}
+        />
+      ))}
+    </div>
   );
 }
+
 export default Gallery;

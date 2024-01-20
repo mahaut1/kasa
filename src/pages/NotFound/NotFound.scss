@@ -1,0 +1,54 @@
+// NotFound.scss
+$primary-rgb: 255 96 96;
+
+.PageNotFoundSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  .erreur_404 {
+    color: rgb($primary-rgb);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-block: 2rem;
+  }
+
+  .Oups {
+    color: rgb($primary-rgb);
+    font-size: 2rem;
+    margin-block: 1rem;
+    text-align: center;
+  }
+
+  .linkToHome {
+    color: rgb($primary-rgb);
+    font-size: 1.5rem;
+    margin-block: 3rem;
+    border-bottom: 2px solid rgb($primary-rgb);
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: darken(rgb($primary-rgb), 10%);
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .PageNotFoundSection {
+    .erreur_404 {
+      font-size: 3rem;
+    }
+
+    .linkToHome {
+      font-size: 1rem;
+      margin-block: 2rem;
+    }
+
+    .Oups {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -118,8 +118,6 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   max-width: 1440px;
   margin: auto;
   padding-left: 55px;

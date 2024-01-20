@@ -16,44 +16,56 @@ nav {
   justify-content: space-between;
   font-size: 30px;
   margin-top: 2rem;
-  white-space: nowrap;
-  text-decoration: none;
 
   .divNav {
     display: flex;
     gap: 3rem;
     padding-left: 3rem;
     align-items: center;
-    text-decoration: none;
+    .active {
+      border-bottom: 2px solid rgb($primary-rgb);
+    }
+
+    .navLink {
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+
+      &:hover {
+        color: darken(rgb($primary-rgb), 10%);
+      }
+
+      &.active {
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -2px;
+          height: 2px;
+          background-color: rgb($primary-rgb);
+        }
+      }
+    }
+
+    .navLink:last-child {
+      margin-right: 10px; 
+    }
   }
 
-  .logo-link.active {
-    border-bottom: none;
-    margin-inline: 0px;
-  }
-
-  .active {
-    border-bottom: 2px solid rgb($primary-rgb);
-  }
-}
-
-@media (max-width: 630px) {
-  nav {
+  @media (max-width: 630px) {
     font-size: medium;
+
     .divNav {
-      display: flex;
       gap: 0.8rem;
       padding-left: 0.8rem;
-      align-items: center;
     }
 
     .logo-link {
-      display: flex;
-      flex-direction: row;
-    }
-    img {
-      margin-left: -1rem;
-      transform: scale(0.8);
+      img {
+        margin-left: -1rem;
+        transform: scale(0.8);
+      }
     }
   }
 }

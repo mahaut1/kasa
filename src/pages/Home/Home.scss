@@ -1,15 +1,17 @@
-.section1 {
-    position: relative;
-  
-    #img0 {
-      height: 250px;
-      width: 100%;
-      object-fit: cover;
-      border-radius: 25px;
-      margin-block: 2rem;
-      filter: brightness(70%);
-    }
+$small-screen: 630px;
+
+.homeSection {
+  position: relative;
+
+  #img0 {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-block: 2rem;
+    filter: brightness(70%);
   }
+
   #partout {
     position: absolute;
     top: 50%;
@@ -19,18 +21,13 @@
     font-size: 40px;
     font-weight: 700;
     text-align: center;
-  }
-  
-  @media (max-width: 630px) {
-    .section1 {
-      #img0 {
-        height: 110px;
 
-      }
-    }
-    #partout {
+    @media (max-width: $small-screen) {
       font-size: 20px;
       left: 35%;
       text-align: initial;
     }
   }
+}
+
+
