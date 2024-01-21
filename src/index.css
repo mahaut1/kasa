@@ -66,7 +66,6 @@ details,
 embed,
 figure,
 figcaption,
-
 header,
 hgroup,
 menu,
@@ -93,7 +92,6 @@ aside,
 details,
 figcaption,
 figure,
-
 header,
 hgroup,
 menu,
@@ -101,6 +99,7 @@ nav,
 section {
   display: block;
   max-width: 1440px;
+  margin:auto;
 }
 
 :root {
@@ -118,10 +117,7 @@ html {
 }
 
 body {
-  max-width: 1440px;
   margin: auto;
-  padding-left: 55px;
-  padding-right: 55px;
   background-color: rgb(255, 255, 255);
   font-family: "Raleway", sans-serif;
 }
@@ -163,7 +159,21 @@ a {
 @media (max-width: 630px) {
   body {
     font-size: 14px;
-    padding-left: 10px;
-    padding-right: 10px;
+    
+    margin:auto;
   }
+  article,
+aside,
+details,
+figcaption,
+figure,
+header,
+hgroup,
+menu,
+nav,
+section{
+  padding-left: 10px;
+    padding-right: 10px;
+}
+
 }
