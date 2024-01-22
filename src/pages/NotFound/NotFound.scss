@@ -10,7 +10,7 @@ $primary-rgb: 255 96 96;
 
   .erreur_404 {
     color: rgb($primary-rgb);
-    font-size: 7rem;
+    font-size: 10rem;
     font-weight: 700;
     margin-block: 2rem;
   }
@@ -39,7 +39,7 @@ $primary-rgb: 255 96 96;
 @media (max-width: 630px) {
   .PageNotFoundSection {
     .erreur_404 {
-      font-size: 5rem;
+      font-size: 10rem;
     }
 
     .linkToHome {

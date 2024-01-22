@@ -92,6 +92,7 @@ $primary-rgb: 255 96 96;
   flex: 1; 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .tag {
@@ -148,25 +149,30 @@ $primary-rgb: 255 96 96;
   }
 
   .div1,
-  .div2,
-  .tags {
+  .div2
+   {
     font-size: 20px;
     width: 100%;
   }
 
   .logementLocation {
     width: 100%;
-    font-size: x-large;
+    font-size: large;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
   }
-
+  .logementTitle{
+    font-size: large;
+  }
+  .tags{
+    justify-content: center;
+  }
   .tag {
     font-size: small;
-    padding-inline: 3rem;
-    padding-block: 0.5rem;
+    padding-inline: 2rem;
     margin-right: 0.5rem;
+    margin-top:0.5rem;
   }
 
   .logementCollapse {
@@ -175,13 +181,17 @@ $primary-rgb: 255 96 96;
     width: 100%;
     margin-top: 1rem;
   }
-
+  .logementStars{
+    width:50%;
+  }
   .div2 {
     width: 100%;
     flex-direction: row-reverse;
     align-items: center;
   }
-
+  .ic_pink, .ic_grey{
+    margin-left: 0;
+  }
   .classCollaps {
     width: 80%;
   }

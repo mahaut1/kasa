@@ -58,3 +58,14 @@ $primary-rgb: 255 96 96;
 .next-button {
   right: 20px;
 }
+
+@media(max-width:630px){
+  .previous-button,
+.next-button{
+  font-size: small;
+}
+#picture-index{
+  font-size: small;
+}
+
+}
